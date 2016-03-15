@@ -1,0 +1,6 @@
+[submodule "task_twelve"]
+	path = task_twelve
+	url = git@github.com:muyewhatever/task_twelve.git
+[submodule "task_eleven"]
+	path = task_eleven
+	url = git@github.com:muyewhatever/task_eleven.git
