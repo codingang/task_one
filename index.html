@@ -121,11 +121,11 @@
         <span>下面是一个表格，给表格加了一个border='1'好让你看出是一个表格</span>
         <table border="1">
             <thead>
-            <tr align="left">
-                <th>表头</th>
-                <th>表头</th>
-                <th>表头</th>
-            </tr>
+                <tr align="left">
+                    <th>表头</th>
+                    <th>表头</th>
+                    <th>表头</th>
+                </tr>
             </thead>
             <tbody>
             <tr>
@@ -160,26 +160,27 @@
             <h2>这里以后是一个侧栏，这是侧栏的标题</h2>
             <h3>侧栏使用aside标签</h3>
         </header>
-        <form>
+        <form id="formOne">
             <p>请输入邮箱地址：<input type="email" placeholder="这是一个文本输入框"></p>
             <p>邮箱地址请按要求格式输入</p>
             <p>请输入密码:<input type="password" placeholder="这是一个文本输入框">请重复输入密码<input type="password" placeholder="这是一个文本输入框"></p>
             <p>密码请为6-16位英文数字</p>
-            <section>性别：
+            <section>
+                性别：
                 <input type="radio" id="male" name="sex" value="male" checked><label for="male">男</label>
                 <input type="radio" id="female" name="sex" value="female"><label for="female">女</label>
-                城市：
-                <select name="city">
+                <label for="formOneSelect">城市：</label>
+                <select name="city" form="formOne" id="formOneSelect">
                     <option value="beijing" selected>北京</option>
                     <option value="shanghai">上海</option>
                     <option value="shenzhen">深圳</option>
                 </select>
-                爱好：
+                <label for="sport">爱好：</label>
                 <input id="sport" type="checkbox" value="sport"><label for="sport">运动</label>
                 <input id="art" type="checkbox" value="art"><label for="art">艺术</label>
                 <input id="science" type="checkbox" value="science"><label for="science">科学</label>
-                个人描述：
-                <textarea>这是一个多行输入框，输入您的个人描述</textarea>
+                <label for="formOneTextarea">个人描述：</label>
+                <textarea id="formOneTextarea">这是一个多行输入框，输入您的个人描述</textarea>
                 <button type="submit">确认提交</button>
             </section>
         </form>
